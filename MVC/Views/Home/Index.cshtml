@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+
+<div class="text-center">
+    @if(!User.Identity.IsAuthenticated)
+    {
+        <h1>Welcome to Prehistory</h1>
+    }
+    else
+    {
+        <h1>Welcome to Prehistory @User.Identity.Name</h1>
+    }
+
+</div>
